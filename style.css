@@ -172,6 +172,7 @@ body.chapter-three {
   line-height: 1.8;
   font-size: 1.05rem;
   color: rgba(241, 244, 249, 0.94);
+  text-align: justify;
 }
 
 .nav-button,
