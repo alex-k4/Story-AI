@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo Gate: Ashes of Memory</title>
-
-    <!-- Google Fonts (Fantasy + Clean UI pairing) -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Gate: Ashes of Memory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-6QM9iKzZgGXf1C7DbGoi3Be6pVmokbS0GHb1tjzU95RiS5srIeBiyqz7Jx4aKQXb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="home-page">
+  <div class="page-shell">
+    <div class="container-fluid py-5 text-white text-center">
+      <header class="hero mb-5">
+        <p class="eyebrow">A cinematic fantasy experience</p>
+        <h1 class="display-4 title">Echo Gate: Ashes of Memory</h1>
+        <p class="lead subtitle">A forgotten world carved into echoes of time.</p>
+      </header>
 
-<body>
+      <section class="characters-section mb-5">
+        <h2 class="section-title mb-4">Characters</h2>
+        <div class="row character-row gx-4 justify-content-center">
+          <div class="col-auto">
+            <article class="card glass-card h-100 overflow-hidden">
+              <img src="character1.png" class="card-img-top" alt="Character 1">
+              <div class="card-body text-center">
+                <h3 class="card-title">Kael Varyn</h3>
+                <p class="card-text">A cloaked wanderer bearing a shard of lost memory.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-auto">
+            <article class="card glass-card h-100 overflow-hidden">
+              <img src="character2.png" class="card-img-top" alt="Character 2">
+              <div class="card-body text-center">
+                <h3 class="card-title">Lyra Solen</h3>
+                <p class="card-text">A scholar of forgotten runes, drawn toward the Echo Gate.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-auto">
+            <article class="card glass-card h-100 overflow-hidden">
+              <img src="character3.png" class="card-img-top" alt="Character 3">
+              <div class="card-body text-center">
+                <h3 class="card-title">Darius Thorne</h3>
+                <p class="card-text">A battle-forged guardian with secrets buried in ash.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <!-- MAIN WRAPPER -->
-    <div class="page-wrapper">
-
-        <!-- ================= HERO SECTION ================= -->
-        <header class="hero">
-            <h1 class="title">Echo Gate: Ashes of Memory</h1>
-            <p class="subtitle">A forgotten world carved into echoes of time</p>
-        </header>
-
-        <!-- ================= CHARACTERS SECTION ================= -->
-        <section class="characters-section">
-
-            <h2 class="section-title">Characters</h2>
-
-            <div class="characters-grid">
-
-                <!-- Character 1 -->
-                <div class="character-card">
-                    <img src="character1.png" alt="Character 1">
-                    <h3>Kael Varyn</h3>
-                </div>
-
-                <!-- Character 2 -->
-                <div class="character-card">
-                    <img src="character2.png" alt="Character 2">
-                    <h3>Lyra Solen</h3>
-                </div>
-
-                <!-- Character 3 -->
-                <div class="character-card">
-                    <img src="character3.png" alt="Character 3">
-                    <h3>Darius Thorne</h3>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ================= STORY SECTION ================= -->
-        <section class="story-section">
-
-            <h2 class="section-title">Part One</h2>
-
-            <div class="story-box">
-                Insert your long story text right here inside this container.
-            </div>
-
-        </section>
-
-        <!-- ================= FOOTER NAVIGATION ================= -->
-        <footer class="footer-nav">
-
-            <a href="page2.html" class="next-button">
-                ➜ Continue Journey
-            </a>
-
-        </footer>
-
+      <section class="story-section mb-5">
+        <h2 class="section-title mb-4">Part One</h2>
+        <div class="story-text mx-auto px-3 px-md-0">
+          Insert your long story text right here inside this container.
+        </div>
+      </section>
     </div>
+  </div>
 
+  <a href="page2.html" class="nav-button nav-right btn btn-primary btn-lg shadow-lg">
+    <span class="arrow">➜</span>
+  </a>
 </body>
 </html>
