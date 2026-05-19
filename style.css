@@ -1,29 +1,168 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background-color: #f2f2f2;
+    font-family: "Inter", sans-serif;
+    color: #f5f5f5;
+
+    /* Fantasy background */
+    background-image: url("background1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Dark overlay for readability */
+.page-wrapper {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 40px 20px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-h1 {
-    color: darkblue;
+/* =========================
+   CHARACTERS
+========================= */
+
+.characters-section {
+    margin-bottom: 60px;
 }
 
-p {
-    font-size: 18px;
-    max-width: 700px;
-    margin: auto;
+.characters-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-a {
+.character-card {
+    width: 220px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.character-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.character-card h3 {
+    font-family: "Cinzel", serif;
+    font-size: 1.1rem;
+}
+
+/* =========================
+   STORY SECTION
+========================= */
+
+.story-section {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+}
+
+.story-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.7;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   FOOTER NAVIGATION
+========================= */
+
+.footer-nav {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.next-button {
     display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
-    background: darkblue;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #3a3a3a, #1f1f1f);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-a:hover {
-    background: navy;
+.next-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #555, #222);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .characters-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-card {
+        width: 80%;
+    }
 }
